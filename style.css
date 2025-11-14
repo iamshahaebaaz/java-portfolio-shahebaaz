@@ -611,18 +611,30 @@ body {
   font-weight: var(--font-weight-medium);
   border: 1px solid rgba(124, 58, 237, 0.3);
   transition: all var(--duration-fast) var(--ease-standard);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.skill-tag i {
+  font-size: var(--font-size-lg);
 }
 
 .skill-tag:hover {
   background: var(--color-purple-primary);
   color: var(--color-white);
   transform: scale(1.05);
+  cursor: default;
 }
 
 /* Experience Section */
 .experience-timeline {
   position: relative;
   padding-left: var(--space-48);
+}
+
+.logo:hover span {
+    color: var(--color-purple-light);
 }
 
 .experience-timeline::before {
